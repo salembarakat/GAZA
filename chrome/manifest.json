@@ -1,0 +1,19 @@
+{
+  "name": "GAZA",
+  "description": "A tool for extracting information from a web page",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": {              
+      "16": "icon16.png"
+    },
+    "default_popup": "popup.html"
+    
+  },
+  "permissions": [
+    "tabs",
+    "scripting"
+    
+  ],
+  "host_permissions": ["<all_urls>"]
+}
