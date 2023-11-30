@@ -1,47 +1,18 @@
-# postMessage-tracker
+# GAZA
 
-Made by [Frans Rosén](https://twitter.com/fransrosen). Presented during the ["Attacking modern web technologies"-talk](https://www.youtube.com/watch?v=oJCCOnF25JU) ([Slides](https://speakerdeck.com/fransrosen/owasp-appseceu-2018-attacking-modern-web-technologies)) at OWASP AppSec Europe back in 2018, but finally released in May 2020.
+Made by [SALEM BARAKAT]((https://hackerone.com/salimbarakat?type=user)). 
 
-<img src="https://github.com/fransr/postMessage-tracker/raw/docs-images/images/listener-uber.png" width="500" />
-
-This Chrome extension monitors postMessage-listeners by showing you an indicator about the amount of listeners in the current window.
-
-It supports tracking listeners in all subframes of the window. It also keeps track of short-lived listeners and listeners enabled upon interactions. You can also log the listener functions and locations to look them through them at a later stage by using the Log URL-option in the extension. This enables you to find hidden listeners that are only enabled for a short time inside an iframe.
-
-It also shows you the interaction between windows inside the console and will specify the windows using a path you can use yourself to replay the message:
-![‏‏لقطة الشاشة (242)](https://github.com/salimbarakat2/GAZA/assets/30748913/9872a122-82f3-446b-ae5a-6740f72facea)
-
-It also supports tracking communication happening between different windows, using `diffwin` as sender or receiver in the console.
+The Chrome extension is simple and fast and has important benefits that benefit hackers and system owners. It extracts important information from the current window.
 
 # Features
 
-* Supports Raven, New Relic, Rollbar, Bugsnag and jQuery wrappers and "unpacks" them to show you the real listener.
+* Checks  HTTP headers security  quickly and gives you inspiring results.
 
-* Tries to bypass and reroute wrappers so the Devtools console will show the proper listeners:
+* It extracts important information such as URLs, forms, and image URLs on this page.
 
-**Using New Relic:**
+* Filtering links and extracting parameters from these links .
 
-<img src="https://github.com/fransr/postMessage-tracker/raw/docs-images/images/before.png" width="200" />
 
-**After, with postMessage-tracker:**
-
-<img src="https://github.com/fransr/postMessage-tracker/raw/docs-images/images/after.png" width="200" />
-
-**Using jQuery:**
-
-<img src="https://github.com/fransr/postMessage-tracker/raw/docs-images/images/before-jquery.png" width="200" />
-
-**After, with postMessage-tracker:**
-
-<img src="https://github.com/fransr/postMessage-tracker/raw/docs-images/images/after-jquery.png" width="200" />
-
-* Allows you to set a Log URL inside the extension options to allow you to log all information about each listener to an endpoint by submitting the listener and the function (to be able to look through all listeners later). You can find the options in the Extension Options when clicking the extension in `chrome://extensions`-page:
-
-<img src="https://github.com/fransr/postMessage-tracker/raw/docs-images/images/options.png" width="300" />
-
-* Supports anonymous functions. Chrome does not support to stringify an anonymous function, in the cases of anonymous functions, you will see the `bound`-string as the listener:
-
-<img src="https://github.com/fransr/postMessage-tracker/raw/docs-images/images/anonymous.png" width="300" />
 
 
 # Known issues
