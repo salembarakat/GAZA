@@ -1,6 +1,6 @@
 # GAZA
 
-Made by [SALEM BARAKAT]((https://hackerone.com/salimbarakat?type=user)). 
+Made by [SALEM BARAKAT]([(https://hackerone.com/salimbarakat?type=user)]). 
 
 The Chrome extension is simple and fast and has important benefits that benefit hackers and system owners. It extracts important information from the current window.
 
