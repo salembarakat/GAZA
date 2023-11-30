@@ -9,8 +9,7 @@ This Chrome extension monitors postMessage-listeners by showing you an indicator
 It supports tracking listeners in all subframes of the window. It also keeps track of short-lived listeners and listeners enabled upon interactions. You can also log the listener functions and locations to look them through them at a later stage by using the Log URL-option in the extension. This enables you to find hidden listeners that are only enabled for a short time inside an iframe.
 
 It also shows you the interaction between windows inside the console and will specify the windows using a path you can use yourself to replay the message:
-
-<img src="https://github.com/fransr/postMessage-tracker/raw/docs-images/images/console.png" width="350" />
+![‏‏لقطة الشاشة (242)](https://github.com/salimbarakat2/GAZA/assets/30748913/9872a122-82f3-446b-ae5a-6740f72facea)
 
 It also supports tracking communication happening between different windows, using `diffwin` as sender or receiver in the console.
 
